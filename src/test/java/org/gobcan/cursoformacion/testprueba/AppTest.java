@@ -24,28 +24,28 @@ public class AppTest
     @Test
     public void pruebaDeSuma1Test()
     {
-        assertEquals("La suma ha dejado de ser correcta", 20, App.suma(10, 10));
+        assertEquals("La suma ha dejado de ser correcta", 20, Operaciones.suma(10, 10));
     }
     
     @Test
     public void pruebaDeSuma2Test()
     {
-    	assertNotEquals("La suma ha dejado de ser correcta", 10000, App.suma(100, 100));
-    	assertEquals("La suma ha dejado de ser correcta", 1100, App.suma(100, 1000));
+    	assertNotEquals("La suma ha dejado de ser correcta", 10000, Operaciones.suma(100, 100));
+    	assertEquals("La suma ha dejado de ser correcta", 1100, Operaciones.suma(100, 1000));
     }
     
     @Test
     public void pruebaDeSuma3Test()
     {
-    	assertEquals("La suma ha dejado de ser correcta", 4, App.suma(2, 2));
-    	assertEquals("La suma ha dejado de ser correcta", 20, App.suma(10, 10));
-    	assertNotEquals("La suma ha dejado de ser correcta", 10000, App.suma(100, 100));
-    	assertEquals("La suma ha dejado de ser correcta", 1100, App.suma(100, 1000));    	
+    	assertEquals("La suma ha dejado de ser correcta", 4, Operaciones.suma(2, 2));
+    	assertEquals("La suma ha dejado de ser correcta", 20, Operaciones.suma(10, 10));
+    	assertNotEquals("La suma ha dejado de ser correcta", 10000, Operaciones.suma(100, 100));
+    	assertEquals("La suma ha dejado de ser correcta", 1100, Operaciones.suma(100, 1000));    	
     }        
     
     @Test
     public void pruebaDeSuma4Test()
     {
-        assertEquals("La suma ha dejado de ser correcta", -1, App.suma(0, 0));
+        assertEquals("La suma ha dejado de ser correcta", -1, Operaciones.suma(0, 0));
     }    
 }
