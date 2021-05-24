@@ -42,6 +42,20 @@ public class OperacionesTest
     }        
     
     @Test
+    public void pruebaDeMultiplicacion2Test()
+    {
+    	assertEquals("La multiplicación ha dejado de ser correcta", 50, Operaciones.multiplicacion(5, 10));
+    	assertEquals("La multiplicación ha dejado de ser correcta", 144, Operaciones.multiplicacion(12, 12));
+    }   
+    
+    @Test
+    public void pruebaDeMultiplicacion3Test()
+    {
+    	assertEquals("La multiplicación ha dejado de ser correcta", 1, Operaciones.multiplicacion(1, 1));
+    	assertEquals("La multiplicación ha dejado de ser correcta", 0, Operaciones.multiplicacion(0, 1000));
+    }       
+    
+    @Test
     public void pruebaDeDivision4Test()
     {
         assertEquals("La division ha dejado de ser correcta", 10, Operaciones.division(100, 10));
