@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertTrue;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**
@@ -62,6 +63,7 @@ public class OperacionesTest
     }    
     
     @Test
+    @Ignore
     public void pruebaDeDivision5Test()
     {
     	assertEquals("La division ha dejado de ser correcta", 0, Operaciones.division(100, 0));
